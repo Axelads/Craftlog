@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'mixins';
+
+// ─── Container écran ───────────────────────────────────────────────────────
+.screen-container {
+  flex: 1;
+  background-color: $color-bg-primary;
+  padding-horizontal: $spacing-md;
+}
+
+// ─── Header de section ─────────────────────────────────────────────────────
+.section-header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-md;
+  padding-top: $spacing-lg;
+}
+
+.section-title {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+}
+
+// ─── Textes utilitaires ────────────────────────────────────────────────────
+.text-primary {
+  color: $color-text-primary;
+  font-size: $font-size-md;
+}
+
+.text-secondary {
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+}
+
+.text-accent {
+  color: $color-accent;
+}
+
+.text-teal {
+  color: $color-accent-teal;
+}
+
+// ─── Séparateur ────────────────────────────────────────────────────────────
+.divider {
+  height: 1px;
+  background-color: $color-border;
+  margin-vertical: $spacing-sm;
+}
+
+// ─── Input de base ─────────────────────────────────────────────────────────
+.input-base {
+  background-color: $color-bg-surface;
+  border-width: 1px;
+  border-color: $color-border;
+  border-radius: $radius-md;
+  color: $color-text-primary;
+  font-size: $font-size-md;
+  padding-horizontal: $spacing-md;
+  padding-vertical: $spacing-sm;
+}
+
+.input-focused {
+  border-color: $color-accent;
+}

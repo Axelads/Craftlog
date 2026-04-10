@@ -1,29 +1,60 @@
 {
   "expo": {
-    "name": "CraftlogTemp",
-    "slug": "CraftlogTemp",
+    "name": "CraftLog",
+    "slug": "craftlog",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo_nom.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0F172A"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.craftlog.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "CraftLog a besoin d'accéder à ta galerie pour ajouter des photos de couverture, des patrons et des images de référence.",
+        "NSCameraUsageDescription": "CraftLog a besoin de ta caméra pour prendre des photos de progression."
+      }
     },
     "android": {
+      "package": "com.craftlog.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#0F172A"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-sharing",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CraftLog a besoin d'accéder à ta galerie pour tes photos de projets.",
+          "cameraPermission": "CraftLog a besoin de ta caméra pour photographier ta progression."
+        }
+      ],
+      [
+        "expo-secure-store"
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c0ba22e1-101e-4d88-b718-c72905686c9e"
+      }
+    },
+    "owner": "axelads"
   }
 }

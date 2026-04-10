@@ -1,0 +1,55 @@
+// ─── Palette "Deep Workshop" ───────────────────────────────────────────────
+// Basé sur da.md
+
+// Fonds
+$color-bg-primary:    #0F172A;   // Fond principal (bleu ardoise)
+$color-bg-surface:    #1E293B;   // Cartes / Inputs
+
+// Accents
+$color-accent:        #A855F7;   // Violet principal (action / branding)
+$color-accent-teal:   #2DD4BF;   // Turquoise néon (succès / validé)
+
+// Textes
+$color-text-primary:  #F8FAFC;   // Blanc cassé
+$color-text-secondary:#94A3B8;   // Gris info secondaire
+
+// Bordures
+$color-border:        #334155;   // Bordure fine 1px
+
+// États
+$color-error:         #F87171;
+$color-warning:       #FBBF24;
+
+// ─── Gradients ─────────────────────────────────────────────────────────────
+$gradient-progress: linear-gradient(90deg, $color-accent, $color-accent-teal);
+$gradient-card:     linear-gradient(135deg, $color-bg-surface, #263348);
+
+// ─── Typographie ───────────────────────────────────────────────────────────
+$font-size-xs:   11px;
+$font-size-sm:   13px;
+$font-size-md:   15px;
+$font-size-lg:   18px;
+$font-size-xl:   22px;
+$font-size-xxl:  28px;
+
+$font-weight-regular: '400';
+$font-weight-medium:  '500';
+$font-weight-bold:    '700';
+
+// ─── Spacing ───────────────────────────────────────────────────────────────
+$spacing-xs:  4px;
+$spacing-sm:  8px;
+$spacing-md:  16px;
+$spacing-lg:  24px;
+$spacing-xl:  32px;
+$spacing-xxl: 48px;
+
+// ─── Border Radius ─────────────────────────────────────────────────────────
+$radius-sm:   6px;
+$radius-md:   12px;
+$radius-lg:   20px;
+$radius-full: 999px;
+
+// ─── Glassmorphism ─────────────────────────────────────────────────────────
+$glass-bg:         rgba(30, 41, 59, 0.75);
+$glass-border:     rgba(168, 85, 247, 0.2);

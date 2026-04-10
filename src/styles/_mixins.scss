@@ -1,0 +1,37 @@
+@import 'variables';
+
+// ─── Glassmorphism header ───────────────────────────────────────────────────
+@mixin glass-surface {
+  background-color: $glass-bg;
+  border-width: 1px;
+  border-color: $glass-border;
+  border-radius: $radius-md;
+}
+
+// ─── Card de base ──────────────────────────────────────────────────────────
+@mixin card-base {
+  background-color: $color-bg-surface;
+  border-radius: $radius-md;
+  border-width: 1px;
+  border-color: $color-border;
+  padding: $spacing-md;
+}
+
+// ─── Texte tronqué ─────────────────────────────────────────────────────────
+@mixin text-ellipsis {
+  overflow: hidden;
+}
+
+// ─── Row centré ────────────────────────────────────────────────────────────
+@mixin row-center {
+  flex-direction: row;
+  align-items: center;
+}
+
+// ─── Badge générique ───────────────────────────────────────────────────────
+@mixin badge($bg) {
+  background-color: $bg;
+  border-radius: $radius-full;
+  padding-horizontal: $spacing-sm;
+  padding-vertical: $spacing-xs;
+}
